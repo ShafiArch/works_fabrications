@@ -1,0 +1,43 @@
+CODE OVERVIEW: "YOUR PERSONAL MONEY AGENT"
+(from Finalproject12marchDXarts.ino, written here as pseudo code)
+
+This Arduino based code drives the interactive behavior of the Personal Money Agent, a speculative design object exploring financial autonomy and surveillance. The system uses an Arduino Uno, a GC9A01 TFT screen, an LDR (light dependent resistor) and a motor to simulate interaction based on light exposure.
+
+KEY FUNCTIONALITIES
+Message display engine: the code stores 25 predefined financial statements in program memory (PROGMEM). Each message critiques the illusion of monetary freedom and debt culture.
+Vertical display: when activated, a message is split into individual words and displayed vertically, line by line, on the circular TFT display. The message is centered on the screen according to its word count.
+Sensor based triggering (LDR): the system constantly reads the LDR. When a hand or object covers the sensor (simulating attention or interaction), it randomly selects and displays a new message from memory. If not blocked, the screen displays the default statement: "Your Personal Money Agent".
+
+PSEUDO CODE
+
+pins: screen on SPI (CS 10, DC 8, RST 9), light sensor on pin 2, vibration motor on pin 3
+
+messages (kept in program memory):
+  23 years of work due; 5 mins cooking due; Half a semester due; 10 years homework;
+  7 days cleaning; 2.5 lifetimes owed; Netflix weekend skipped; 1 yr gym missed;
+  Tasks infinite; 8 hrs engineering; 4 hrs accounting; 12 hrs labor; 2 days support;
+  36 hrs debugging; 6 hrs parenting; 3 months writing; 100 coffees pending;
+  50 deliveries due; 7 hrs brain; 5000 meetings; 48 hrs focus; 9 hrs UX/UI;
+  3.14 days thinking; 1 week emotion; Bakery night shift; Design marathon
+default message: "Your Personal Money Agent"
+
+show(message):
+  clear the round screen to black, white text
+  split the message into words
+  stack the words vertically, each line centered, the block centered on the 240 px screen
+  draw each word twice, one pixel apart, so it reads bold
+
+setup:
+  start serial, set the sensor as input and the motor as output
+  seed the random generator, start the screen
+  show(default message)
+
+loop, forever:
+  read the light sensor
+  if the sensor is covered and was not covered before:
+    vibrate the motor for 1 to 2 seconds
+    pick a random message and show it
+    remember that it is covered
+  else if the sensor is uncovered again:
+    show(default message)
+    remember that it is uncovered

@@ -8,107 +8,118 @@
   <meta property="og:title" content="Fabrication Works · Shafiul Islam">
   <meta property="og:description" content="Sentience, Parametric Screening and the Sketchbook Corner Piece: computational design made physical.">
   <meta property="og:image" content="https://shafiarch.github.io/works_fabrications/img/sentience/exhibition.webp">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M6 26 16 6l10 20z' fill='none' stroke='%23111' stroke-width='2.5'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M6 26 16 6l10 20z' fill='none' stroke='%23c4512f' stroke-width='2.5'/%3E%3C/svg%3E">
+  <script>
+    /* theme before paint; the same key as the works site, so a visitor's choice carries over */
+    (function () { var t = "trace", q = new URLSearchParams(location.search).get("theme");
+      try { t = localStorage.getItem("site-theme") || t; } catch (e) {}
+      if (/^(trace|night|clay)$/.test(q || "")) t = q;
+      if (!/^(trace|night|clay)$/.test(t)) t = "trace";
+      document.documentElement.dataset.theme = t; })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
-  <link rel="stylesheet" href="assets/style.css?v=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/style.css?v=2">
 </head>
 <body>
   <header class="top">
     <a class="name" href="#top">Fabrication Works</a>
     <nav class="toc" aria-label="Projects">
-      <a href="#sentience"><span>01</span> Sentience</a>
-      <a href="#parametric-screening"><span>02</span> Parametric Screening</a>
-      <a href="#sketchbook-corner-piece"><span>03</span> Sketchbook Corner Piece</a>
+      <a href="#sentience" style="--c: var(--c1)"><span>01</span> Sentience</a>
+      <a href="#parametric-screening" style="--c: var(--c2)"><span>02</span> Parametric Screening</a>
+      <a href="#sketchbook-corner-piece" style="--c: var(--c3)"><span>03</span> Sketchbook Corner Piece</a>
     </nav>
+    <div class="themes" role="group" aria-label="Theme">
+      <button type="button" data-theme="trace">Trace</button><button type="button" data-theme="night">Night</button><button type="button" data-theme="clay">Clay</button>
+    </div>
     <a class="home" href="https://shafiarch.github.io/works_shafi/">Shafiul Islam</a>
   </header>
 
   <main id="top">
     <section class="intro">
-      <p class="kicker">Shafiul Islam · Fabrication</p>
-      <h1>Fabrication Works</h1>
-      <p class="lede">Three pieces designed in Rhino and Grasshopper and made by hand and machine: an interactive object driven by an Arduino, a CNC and laser cut screen for a window, and a 3D printed corner piece for a sketchbook.</p>
+      <div>
+        <p class="kicker">Shafiul Islam · Fabrication</p>
+        <h1>Fabrication Works</h1>
+      </div>
+      <p class="lede">Three pieces designed in Rhino and Grasshopper and made by hand and machine: an interactive object driven by an Arduino, a CNC and laser cut screen for a window, and a 3D printed corner for a sketchbook.</p>
       <ol class="index">
-        <li><a href="#sentience"><span class="n">01</span><span class="t">Sentience</span><span class="m">Arduino, 3D printing</span></a></li>
-        <li><a href="#parametric-screening"><span class="n">02</span><span class="t">Parametric Screening</span><span class="m">CNC milling, laser cutting</span></a></li>
-        <li><a href="#sketchbook-corner-piece"><span class="n">03</span><span class="t">Sketchbook Corner Piece</span><span class="m">3D printing</span></a></li>
+        <li style="--c: var(--c1)"><a href="#sentience"><span class="n">01</span><span class="t">Sentience</span><span class="m">Arduino, 3D printing</span></a></li>
+        <li style="--c: var(--c2)"><a href="#parametric-screening"><span class="n">02</span><span class="t">Parametric Screening</span><span class="m">CNC milling, laser cutting</span></a></li>
+        <li style="--c: var(--c3)"><a href="#sketchbook-corner-piece"><span class="n">03</span><span class="t">Sketchbook Corner Piece</span><span class="m">3D printing</span></a></li>
       </ol>
     </section>
 
-    <!-- 01 -->
-    <section class="project dark" id="sentience">
-      <div class="wrap">
-        <header class="p-head">
-          <p class="kicker"><span>01</span> MS, first year, second quarter · Studio instructor: Afroditi Psarra</p>
+    <!-- 01 Sentience -->
+    <section class="project" id="sentience" style="--c: var(--c1)">
+      <div class="board b-sentience">
+        <header class="head a-head">
+          <p class="kicker"><span>01</span> MS, first year, second quarter · Instructor: Afroditi Psarra</p>
           <h2>Sentience</h2>
           <p class="sub">Your personal money agent</p>
+          <h3>The panoptic eye</h3>
+          <p>Shaped like an eyeball, the Personal Money Agent stands for the ever watchful nature of financial institutions. Banks already hold deeply personal data, every transaction, purchase and debt, without consent. The unblinking eye makes that surveillance visible: every interaction confirms that the user is monitored, categorized and controlled.</p>
+          <h3>The dissolution of monetary standards</h3>
+          <p>Money has always had a reference (gold, fiat currency, cryptocurrency); this project imagines a future where even that disappears. Insert a card and the display shows no balance, only the labor a purchase costs, in hours, days or weeks.</p>
         </header>
-
-        <div class="split">
-          <figure class="tall"><img src="img/sentience/assembled.webp" alt="Rendering of the money agent: a patterned sphere with a screen eye on a folded leg structure" width="539" height="1400" loading="lazy"></figure>
-          <div class="text">
-            <h3>The panoptic eye: the ultimate observer</h3>
-            <p>The Personal Money Agent, shaped like an eyeball, represents the ever watchful nature of financial institutions. Banks already possess deeply personal data, tracking every transaction, purchase and debt, without consent. This speculative design makes that surveillance visible and tangible. The unblinking eye stares back, reminding users that financial autonomy is an illusion. Every interaction confirms that they are being monitored, categorized and controlled.</p>
-            <h3>The dissolution of monetary standards</h3>
-            <p>Money has always had a reference (gold, fiat currency, cryptocurrency), but this project speculates on a future where even that disappears. Instead of monetary values, transactions are measured in work hours, days or weeks. When a user inserts their card, the display does not show a balance but the amount of labor required for a purchase. In this system money ceases to exist, replaced by a direct exchange of human effort.</p>
-            <dl class="facts">
-              <div><dt>Made with</dt><dd>Arduino Uno, GC9A01 round TFT screen, light sensor (LDR), vibration motor</dd></div>
-              <div><dt>Body</dt><dd>3D printed organic pattern shell, support rings, card slot and folding legs</dd></div>
-              <div><dt>Tools</dt><dd>Rhino, Grasshopper, Arduino, Fritzing</dd></div>
-            </dl>
-          </div>
+        <figure class="a-assembled dark-made"><img src="img/sentience/assembled.webp" alt="Rendering of the money agent: a patterned sphere with a screen eye on folding legs" width="539" height="1400" loading="lazy"></figure>
+        <figure class="a-exploded dark-made"><img src="img/sentience/exploded-axonometric.webp" alt="Exploded axonometric: toothed connection, support ring, back and front pieces, organic pattern, screen holder, screen, base, card slot, fixed and moveable leg pieces, screw joint" width="2000" height="1833" loading="lazy"></figure>
+        <div class="a-screen">
+          <div class="agent" aria-label="The round screen, cycling the agent's messages" role="img"><div class="agent-text" data-agent>Your Personal Money Agent</div></div>
+          <p class="note">The round screen. Cover the light sensor and it vibrates, then shows the time a purchase will cost. <button type="button" class="link" data-agent-next>Cover it</button></p>
         </div>
-
-        <figure class="wide"><img src="img/sentience/exploded-axonometric.webp" alt="Exploded axonometric: toothed connection, support ring, back pieces, front pieces, organic pattern, screen holder, screen, base, card slot, fixed and moveable leg pieces, screw joint" width="2000" height="1833" loading="lazy"></figure>
-
-        <figure class="full"><img src="img/sentience/exhibition.webp" alt="The money agent on a plinth in the exhibition, in violet light" width="2600" height="522" loading="lazy"><figcaption>In the exhibition</figcaption></figure>
-
-        <div class="split rev">
-          <div class="text">
-            <h3>The illusion of choice and the future of debt</h3>
-            <p>Financial freedom becomes a calculated illusion as debt shifts from numbers on a screen to time taken from life itself. The banking system dictates how long one must work, turning labor into the only economic unit. A short vibration before the message appears reinforces this submission. Using a credit card, a once routine gesture, becomes a reminder of financial dependence.</p>
-            <h3>A future without financial autonomy</h3>
-            <p>In this speculative world people do not spend money; they spend their time. The eye, always watching, reinforces that there is no escape from the system. As wealth disappears, only labor and control remain. The machine does not ask how much money one has; it dictates how much of their life they must give. The project questions whether the future of finance will erase money altogether, leaving only debt, work and submission.</p>
-          </div>
-          <figure><img src="img/sentience/screen-and-sensors.webp" alt="Section through the sphere: GC9A01 screen, Arduino Uno, motor and light sensor" width="1632" height="1229" loading="lazy"><figcaption>Screen, Arduino, motor and light sensor inside the shell</figcaption></figure>
+        <figure class="a-exhibit"><img src="img/sentience/exhibition.webp" alt="The money agent on a plinth in the exhibition, in violet light" width="2600" height="522" loading="lazy"><figcaption>In the exhibition</figcaption></figure>
+        <div class="a-text2 prose">
+          <h3>The illusion of choice</h3>
+          <p>Debt shifts from numbers on a screen to time taken from life itself. A short vibration before each message reinforces the submission; a once routine gesture, using a card, becomes a reminder of financial dependence.</p>
+          <h3>A future without financial autonomy</h3>
+          <p>People do not spend money; they spend their time. The machine does not ask how much money one has; it dictates how much of their life they must give, leaving only debt, work and submission.</p>
         </div>
+        <figure class="a-sensors dark-made"><img src="img/sentience/screen-and-sensors.webp" alt="Section through the sphere: GC9A01 screen, Arduino Uno, motor and light sensor" width="1632" height="1229" loading="lazy"><figcaption>Inside the shell</figcaption></figure>
+        <figure class="a-schematic line-art"><img src="img/sentience/schematic.webp" alt="Schematic drawing of the circuit" width="1455" height="1274" loading="lazy"><figcaption>Schematic</figcaption></figure>
+        <figure class="a-wiring dark-made"><img src="img/sentience/circuit-connections.webp" alt="Circuit connections between the Arduino Uno, the round screen, the motor and the light sensor" width="1214" height="1500" loading="lazy"><figcaption>Wiring</figcaption></figure>
+        <figure class="a-photo"><img src="img/sentience/circuit-photo.webp" alt="The wired prototype on the bench" width="934" height="1400" loading="lazy"><figcaption>On the bench</figcaption></figure>
+        <div class="a-code">
+          <p class="code-title">The program, as pseudo code</p>
+<pre class="code"><span class="cm">// Arduino Uno, GC9A01 round screen, light sensor, vibration motor</span>
+<b>messages</b> = 26 statements of time owed
+   <span class="cm">"23 years of work due", "2.5 lifetimes owed", ...</span>
+<b>default</b>  = "Your Personal Money Agent"
 
-        <div class="grid3">
-          <figure><img src="img/sentience/schematic.webp" alt="Schematic drawing of the circuit" width="1455" height="1274" loading="lazy"><figcaption>Schematic drawing</figcaption></figure>
-          <figure><img src="img/sentience/circuit-connections.webp" alt="Circuit connections between the Arduino Uno, the round screen, the motor and the light sensor" width="1214" height="1500" loading="lazy"><figcaption>Circuit connections</figcaption></figure>
-          <figure><img src="img/sentience/circuit-photo.webp" alt="Photo of the wired prototype on the bench" width="934" height="1400" loading="lazy"><figcaption>The prototype on the bench</figcaption></figure>
+<b>show</b>(message)
+   clear the screen, white on black
+   stack the words, each line centered
+
+<b>setup</b>: start screen and sensor, show(default)
+
+<b>loop</b>, forever
+   <b>if</b> the sensor is covered, and was not
+      vibrate 1 to 2 seconds
+      show(a random message)
+   <b>else if</b> it is uncovered again
+      show(default)</pre>
         </div>
-
-        <figure class="full"><img src="img/sentience/code-overview.webp" alt="Code overview of the Arduino program that drives the money agent" width="2600" height="1839" loading="lazy"><figcaption>Code overview: the Arduino program behind the messages</figcaption></figure>
       </div>
     </section>
 
-    <!-- 02 -->
-    <section class="project light" id="parametric-screening">
-      <div class="wrap">
-        <header class="p-head">
-          <p class="kicker"><span>02</span> MS, first year, first quarter · Introduction to Digital Fabrication · Studio instructor: Bryan Washko</p>
+    <!-- 02 Parametric Screening -->
+    <section class="project" id="parametric-screening" style="--c: var(--c2)">
+      <div class="board b-screen">
+        <header class="head b-head">
+          <p class="kicker"><span>02</span> MS, first year, first quarter · Introduction to Digital Fabrication · Instructor: Bryan Washko</p>
           <h2>Parametric Screening</h2>
           <p class="sub">For a window aperture</p>
+          <p>A screen that is both partition and structure: CNC machined wooden bones and disc joints carry laser cut C flute panels. Designed in Rhino and Grasshopper, with structural analysis for stability, material properties and load distribution.</p>
         </header>
-
-        <div class="cols">
-          <p>The project, part of the Introduction to Digital Fabrication course, centers on the design and fabrication of a parametric screen. Combining aesthetic appeal and structural integrity, the screen pairs CNC machined wooden structural elements with laser cut C flute for the screening. Designed in Rhino and Grasshopper, it brings computational design tools and digital fabrication together.</p>
-          <p>The screen serves as a functional and visually dynamic partition, exploring how parametric design can address both form and function. Structural analysis was carried out to ensure its stability, with careful consideration of material properties and load distribution.</p>
+        <figure class="b-steps"><img src="img/parametric-screen/design-steps.webp" alt="Design steps: parametric surface, side view, elevation, axonometric view and front view of the screen" width="2600" height="833" loading="lazy"><figcaption>1 Parametric surface · 2 Side view · 3 Elevation · 4 Axonometric · 5 Front view</figcaption></figure>
+        <div class="b-text prose">
+          <h3>From surface to toolpath</h3>
+          <p>A parametric surface became a network of triangular meshes: simpler to fabricate, still visually dynamic. The triangles generated the CNC toolpaths for the wooden structure and the laser cut files for the screening.</p>
+          <h3>Making</h3>
+          <p>The CNC cut framework was assembled, the laser cut screening attached to it, and final adjustments made for stability and refinement.</p>
         </div>
-
-        <figure class="full"><img src="img/parametric-screen/design-steps.webp" alt="Design steps: parametric surface, side view, elevation, axonometric view and front view of the screen" width="2600" height="833" loading="lazy"><figcaption>From the parametric surface to the screen: side view, elevation, axonometric view, front view</figcaption></figure>
-
-        <div class="cols">
-          <p>Rhino and Grasshopper were used to model a parametric surface that forms the basis of the screen, balancing aesthetics with efficient material use. The surface was turned into triangular meshes to simplify fabrication while keeping its dynamic visual complexity, and this network of triangles generated the toolpaths for CNC cutting and the laser cut files for the screening components.</p>
-          <p>A CNC machine cut the wooden structural elements and a laser cutter produced the screening patterns in C flute. The CNC cut wooden framework was then assembled and the laser cut screening attached to it, with final adjustments for stability and refinement.</p>
-        </div>
-
-        <figure class="full"><img src="img/parametric-screen/parts-and-modules.webp" alt="Parts and modules: discs, bones, joineries, unit structure, unit hexagon, structure and the whole screen" width="2553" height="614" loading="lazy"><figcaption>Discs, bones and joinery make a unit; units make the structure</figcaption></figure>
-
-        <dl class="facts row">
+        <figure class="b-parts"><img src="img/parametric-screen/parts-and-modules.webp" alt="Parts and modules: discs, bones, joineries, unit structure, unit hexagon, structure and the whole screen" width="2553" height="614" loading="lazy"><figcaption>Discs, bones and joinery make a unit; units make the structure</figcaption></figure>
+        <dl class="facts b-facts">
           <div><dt>Structure</dt><dd>CNC milled wood, disc joints</dd></div>
           <div><dt>Screening</dt><dd>Laser cut C flute</dd></div>
           <div><dt>Tools</dt><dd>Rhino, Grasshopper</dd></div>
@@ -116,41 +127,29 @@
       </div>
     </section>
 
-    <!-- 03 -->
-    <section class="project olive" id="sketchbook-corner-piece">
-      <div class="wrap">
-        <header class="p-head">
+    <!-- 03 Sketchbook Corner Piece -->
+    <section class="project" id="sketchbook-corner-piece" style="--c: var(--c3)">
+      <div class="board b-corner">
+        <header class="head c-head">
           <p class="kicker"><span>03</span> 3D printing · Rhino, Grasshopper, Cura</p>
           <h2>Sketchbook Corner Piece</h2>
-          <p class="sub">A protective, adjustable corner for a sketchbook</p>
+          <p class="sub">Protective, adjustable, light</p>
+          <p>Sketchbooks take rough handling, most of all at the corners. This piece protects the most vulnerable part of the book and adapts to different sketchbook sizes.</p>
         </header>
-
-        <div class="split">
-          <div class="text">
-            <p class="big">Sketchbooks take rough handling, most of all at the corners. This piece protects the most vulnerable part of the book: customizable, durable and light, and easy to adapt to different sketchbook sizes.</p>
-            <h3>Material optimization</h3>
-            <p>The design began with the aim of using as little material as possible while keeping strength and visual appeal. A topological optimization approach was explored first and then replaced with a Voronoi pattern, chosen for its simplicity, its look and the material it saves: a light yet sturdy piece.</p>
-            <h3>Adjustable</h3>
-            <p>A screw mechanism lets the user adjust the thickness of the corner piece, so one design fits many sketchbook sizes. Rhino and Grasshopper gave precise control over the geometry and the distribution of material.</p>
-          </div>
-          <figure><img src="img/sketchbook-corner/render.webp" alt="Rendering of the corner piece halves with Voronoi pattern and the screw discs" width="2200" height="1023" loading="lazy"></figure>
+        <figure class="c-render"><img src="img/sketchbook-corner/render.webp" alt="Rendering of the corner piece halves with Voronoi pattern and the screw discs" width="2200" height="1023" loading="lazy"></figure>
+        <div class="c-text prose">
+          <h3>Material optimization</h3>
+          <p>Topological optimization was explored first, then replaced by a Voronoi pattern: simpler, better looking, and lighter on material for a piece that stays sturdy.</p>
+          <h3>Adjustable</h3>
+          <p>A screw mechanism sets the thickness of the corner, so one design fits many sketchbooks.</p>
         </div>
-
-        <figure class="full"><img src="img/sketchbook-corner/print-steps.webp" alt="Seven steps of the printed piece, from the screw disc to the assembled corner" width="2600" height="710" loading="lazy"><figcaption>Printed parts, from the screw disc to the assembled corner</figcaption></figure>
-
-        <div class="cols">
-          <p>Once the design was final, the model was sliced in Cura, which writes the instructions for the printer. The piece needed a print volume of 6 by 6 by 6 inches and weighs 280 grams; it was printed on an Ultimaker in about 11 hours.</p>
-          <p>The result is a functional, customizable and durable corner piece that meets the goals of the project: protection, adaptability and aesthetic appeal.</p>
-        </div>
-
-        <figure class="full script"><img src="img/sketchbook-corner/grasshopper-script.webp" alt="The Grasshopper definition behind the corner piece" width="3200" height="250" loading="lazy"><figcaption>The Grasshopper definition</figcaption></figure>
-
-        <dl class="facts row">
+        <figure class="c-steps"><img src="img/sketchbook-corner/print-steps.webp" alt="Seven steps of the printed piece, from the screw disc to the assembled corner" width="2600" height="710" loading="lazy"><figcaption>Printed parts, from the screw disc to the assembled corner</figcaption></figure>
+        <dl class="facts c-facts">
           <div><dt>Print volume</dt><dd>6 × 6 × 6 in</dd></div>
           <div><dt>Weight</dt><dd>280 g</dd></div>
-          <div><dt>Printer</dt><dd>Ultimaker, about 11 hours</dd></div>
-          <div><dt>Tools</dt><dd>Rhino, Grasshopper, Cura</dd></div>
+          <div><dt>Printer</dt><dd>Ultimaker, about 11 hours, sliced in Cura</dd></div>
         </dl>
+        <figure class="c-script"><img src="img/sketchbook-corner/grasshopper-script.webp" alt="The Grasshopper definition behind the corner piece" width="3200" height="250" loading="lazy"><figcaption>The Grasshopper definition</figcaption></figure>
       </div>
     </section>
   </main>
@@ -162,6 +161,6 @@
   </footer>
 
   <div class="lb" hidden><img alt=""><button type="button" aria-label="Close">&#215;</button></div>
-  <script src="assets/site.js?v=1"></script>
+  <script src="assets/site.js?v=2"></script>
 </body>
 </html>

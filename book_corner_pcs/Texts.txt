@@ -1,0 +1,12 @@
+SKETCHBOOK CORNER PIECE
+
+As sketchbooks are often subjected to rough handling, particularly at the corners, this project aimed to provide a practical solution to protect the most vulnerable parts of the book. The design leverages modern computational tools and 3D printing technology to create a customizable, durable and lightweight protective piece that can be easily adapted to different sketchbook sizes, ensuring long term usability.
+
+MATERIAL OPTIMIZATION
+The design process began with the intention of optimizing material usage while maintaining both strength and visual appeal. Initially, a topological optimization approach was explored, but it was eventually replaced with a Voronoi pattern. The Voronoi structure was chosen for its simplicity, aesthetic qualities and the reduction in material required for fabrication, resulting in a lightweight yet sturdy piece.
+
+The next step in the design was the incorporation of a screw mechanism, which allows the user to adjust the thickness of the corner piece. This feature ensures versatility, enabling the product to accommodate various sketchbook sizes. The design was created using Rhino and Grasshopper, software tools that facilitated precise control over geometry and material distribution.
+
+Once the design was finalized, the model was prepared for 3D printing by slicing it in Cura, a software that generates the instructions for the 3D printer. The project required a print volume of 6 inches by 6 inches by 6 inches and a weight of 280 grams. The model was printed using an Ultimaker 3D printer, with the process taking approximately 11 hours.
+
+The end result was a functional, customizable and durable corner piece that successfully met the project's goals of protection, adaptability and aesthetic appeal.

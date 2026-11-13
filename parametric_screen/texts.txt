@@ -1,0 +1,19 @@
+PARAMETRIC SCREENING
+For a window aperture
+MS, first year, first quarter. Studio instructor: Bryan Washko.
+
+The project, undertaken as part of the Introduction to Digital Fabrication course, centers on the design and fabrication of a parametric screen. Combining aesthetic appeal and structural integrity, this screen incorporates CNC machined wooden structural elements and laser cut C flute materials for the screening. Designed using Rhino and Grasshopper, the project highlights the seamless integration of computational design tools with digital fabrication technologies.
+
+The parametric screen serves as a functional and visually dynamic partition, exploring the potential of parametric design to address both form and functionality. Structural analysis was conducted to ensure the screen's stability, with careful consideration of material properties and load distribution.
+
+Rhino and Grasshopper were employed to model a parametric surface that forms the basis of the screen, integrating aesthetics with efficient material usage. The screen's surface was transformed into triangular meshes to simplify the fabrication process while maintaining its dynamic visual complexity. This network of triangular meshes facilitated the generation of toolpaths for CNC cutting and the preparation of laser cut files for the screening components.
+
+The network of triangular meshes was extracted, and toolpaths were generated for CNC cutting while laser cut files were prepared for the screening components in C flute materials. The fabrication phase involved utilizing a CNC machine to cut the wooden structural elements with precision and employing a laser cutter to produce the intricate screening patterns on C flute materials.
+
+The CNC cut wooden framework was then assembled, and the laser cut screening was attached to the framework. Final inspections were conducted to make minor adjustments for stability and aesthetic refinement.
+
+DESIGN STEPS (labels)
+1 Parametric surface; 2 Side view; 3 Elevation; 4 Axonometric view; 5 Front view.
+
+PARTS AND MODULES (labels)
+1 Discs; 2 Bones; 3 Joineries; Unit structure; 4 Unit hexagon; 5 Structure; 6 All.

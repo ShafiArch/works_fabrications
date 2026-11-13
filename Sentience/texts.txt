@@ -1,0 +1,23 @@
+YOUR PERSONAL MONEY AGENT
+Project: Sentience. MS, first year, second quarter. Studio instructor: Afroditi Psarra.
+
+THE PANOPTIC EYE: THE ULTIMATE OBSERVER
+The Personal Money Agent, shaped like an eyeball, represents the ever watchful nature of financial institutions. Banks already possess deeply personal data, tracking every transaction, purchase and debt, without consent. This speculative design makes that surveillance visible and tangible. The unblinking eye stares back, reminding users that financial autonomy is an illusion. Every interaction confirms that they are being monitored, categorized and controlled.
+
+THE DISSOLUTION OF MONETARY STANDARDS
+Money has always had a reference (gold, fiat currency, cryptocurrency), but this project speculates on a future where even that disappears. Instead of monetary values, transactions are measured in work hours, days or weeks. When a user inserts their card, the display does not show a balance but the amount of labor required for a purchase. In this system money ceases to exist, replaced by a direct exchange of human effort.
+
+THE ILLUSION OF CHOICE AND THE FUTURE OF DEBT
+Financial freedom becomes a calculated illusion as debt shifts from numbers on a screen to time taken from life itself. The banking system dictates how long one must work, turning labor into the only economic unit. A short vibration before displaying the message reinforces this submission. The action of using a credit card, a once routine gesture, becomes a reminder of financial dependence.
+
+A FUTURE WITHOUT FINANCIAL AUTONOMY
+In this speculative world, people do not spend money; they spend their time. The eye, always watching, reinforces that there is no escape from the system. As wealth disappears, only labor and control remain. The machine does not ask how much money one has; it dictates how much of their life they must give. This project questions whether the future of finance will erase money altogether, leaving only debt, work and submission.
+
+EXPLODED AXONOMETRIC (labels)
+Toothed connection; support ring; back pieces; front pieces; organic pattern; screen holder, outer piece; screen; base; card slot; fixed piece; moveable pieces; screw joint.
+
+INSIDE THE SHELL (labels)
+GC9A01 TFT screen; Arduino Uno; motor; LDR.
+
+DRAWINGS
+Schematic drawing; circuit connections (GC9A01 TFT screen, LDR, motor, Arduino Uno).
