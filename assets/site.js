@@ -15,13 +15,13 @@
   });
   mark();
 
-  /* lightbox keeps the figure's tone class, so a dark board image is toned the same way */
+  /* lightbox; the line art keeps its inversion on the light themes */
   var lb = document.querySelector(".lb"), big = lb.querySelector("img");
   function close() { lb.hidden = true; big.removeAttribute("src"); lb.className = "lb"; document.body.style.overflow = ""; }
   document.querySelectorAll("figure img").forEach(function (img) {
     img.addEventListener("click", function () {
       var fig = img.closest("figure");
-      lb.className = "lb" + (fig.classList.contains("dark-made") ? " dark-made" : "") + (fig.classList.contains("line-art") ? " line-art" : "");
+      lb.className = "lb" + (fig.classList.contains("line-art") ? " line-art" : "");
       big.src = img.currentSrc || img.src; big.alt = img.alt;
       lb.hidden = false; document.body.style.overflow = "hidden";
       lb.querySelector("button").focus();
