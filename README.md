@@ -11,3 +11,7 @@ The folders `Sentience/`, `parametric_screen/` and `book_corner_pcs/` hold the o
 Themes: Trace, Night and Clay, as on the works site, and the choice carries over from it. Images drawn for a black board with light labels have a second file, `name-light.webp`, with the labels and leader lines turned dark (shown in Trace and Clay; Night shows the original). The schematic carries `line-art` and is inverted on the light themes.
 
 Writing rule: no em dashes or en dashes; commas, semicolons, parentheses or periods.
+
+## Colour
+
+The Sketchbook Corner Piece render and photos share one clay white (CIELAB L about 90, a 0.8, b 4.5): `python3 tools/clay_white.py photo|render <in> <out>` (needs Pillow and scikit-image). Run it on the original export, not on a corrected copy.
