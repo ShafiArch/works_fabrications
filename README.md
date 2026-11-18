@@ -4,7 +4,7 @@ Shafiul Islam's fabrication projects on one page: https://shafiarch.github.io/wo
 
 1. **Sentience**, your personal money agent (Arduino, 3D printing)
 2. **Parametric Screening** for a window aperture (CNC milling, laser cutting)
-3. **Sketchbook Corner Piece** (3D printing)
+3. **Adjustable Corner Guard** (3D printing)
 
 The folders `Sentience/`, `parametric_screen/` and `book_corner_pcs/` hold the original exports and the board texts as `.txt` (`Sentience/code.txt` is the Arduino program as pseudo code). The page (`index.html`, `assets/`) uses web copies in `img/` (WebP, transparency kept; the Sentience renders brought back to full opacity, the schematic turned into line art). To change a text, edit `index.html`; to swap an image, export a new WebP into `img/<project>/` with the same name.
 
@@ -14,4 +14,4 @@ Writing rule: no em dashes or en dashes; commas, semicolons, parentheses or peri
 
 ## Colour
 
-The Sketchbook Corner Piece render and photos share one clay white (CIELAB L about 90, a 0.8, b 4.5): `python3 tools/clay_white.py photo|render <in> <out>` (needs Pillow and scikit-image). Run it on the original export, not on a corrected copy.
+The Adjustable Corner Guard render and photos share one clay white (CIELAB L about 90, a 0.8, b 4.5): `python3 tools/clay_white.py photo|render <in> <out>` (needs Pillow and scikit-image). Run it on the original export, not on a corrected copy.

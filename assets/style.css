@@ -117,7 +117,7 @@ img.v-light { display: none; }
 .b-facts { grid-column: 5 / span 8; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 24px; }
 .b-facts div { grid-template-columns: 1fr; gap: 0; }
 
-/* 03 Sketchbook Corner Piece */
+/* 03 Adjustable Corner Guard */
 .c-head { grid-column: 1 / span 4; align-self: start; }
 .c-render { grid-column: 5 / span 5; }
 .c-text { grid-column: 10 / span 3; align-self: start; }

@@ -1,4 +1,4 @@
-"""Bring the Sketchbook Corner Piece pictures to one clay white.
+"""Bring the Adjustable Corner Guard pictures to one clay white.
 
 The printed parts photograph yellowish and dim (aged filament look); the render is a cold
 paper white. Both are moved to the same white in CIELAB: L about 90 in the highlights,
