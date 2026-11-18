@@ -1,22 +1,22 @@
 /* Fabrication Works: one seamless canvas for three projects.
-   Themes match the works site (Trace, Night, Clay). Each project keeps a colour from its
-   own board as an accent: --c1 Sentience (exhibition violet), --c2 Parametric Screening
-   (birch and C flute), --c3 Sketchbook Corner Piece (printed filament and olive).
+   Themes match the works site (Trace, Night, Clay). One accent for the whole page, orange
+   red, as on Simulation Workflows; --c1, --c2 and --c3 are kept as names and all point to it.
    Cutouts with transparency sit straight on the canvas. Images drawn for a black board
    with light labels come in two versions: name.webp (Night) and name-light.webp, where the
-   label text and leader lines are dark and the model keeps its own white (Trace, Clay).
+   label text and leader lines are dark and the model keeps its own white (Trace, Clay); in the
+   light copies of the renders the floor shadow is a true shadow that fades out before the edge.
    The line schematic (.line-art, white lines) is inverted on the light themes. */
 :root, [data-theme="trace"] {
   --bg: #f5f5f2; --ink: #111; --ink-2: #5d615c; --rule: rgba(0, 0, 0, 0.12); --accent: #c4512f;
-  --c1: #6f4fd8; --c2: #a8664a; --c3: #8a7a3a; --line-art: invert(1); --code-bg: rgba(0, 0, 0, 0.04);
+  --c1: var(--accent); --c2: var(--accent); --c3: var(--accent); --line-art: invert(1); --code-bg: rgba(0, 0, 0, 0.04);
 }
 [data-theme="night"] {
-  --bg: #050505; --ink: #f1efea; --ink-2: #8f8d88; --rule: rgba(255, 255, 255, 0.14); --accent: #ffffff;
-  --c1: #a98bff; --c2: #d9a387; --c3: #d6c27a; --line-art: none; --code-bg: rgba(255, 255, 255, 0.05);
+  --bg: #050505; --ink: #f1efea; --ink-2: #8f8d88; --rule: rgba(255, 255, 255, 0.14); --accent: #ff6a3d;
+  --c1: var(--accent); --c2: var(--accent); --c3: var(--accent); --line-art: none; --code-bg: rgba(255, 255, 255, 0.05);
 }
 [data-theme="clay"] {
   --bg: #ebe5da; --ink: #2a2420; --ink-2: #776c62; --rule: rgba(42, 36, 32, 0.16); --accent: #a8482a;
-  --c1: #6a4bb8; --c2: #9a5a3e; --c3: #6f6430; --line-art: invert(0.85) sepia(0.3); --code-bg: rgba(42, 36, 32, 0.05);
+  --c1: var(--accent); --c2: var(--accent); --c3: var(--accent); --line-art: invert(0.85) sepia(0.3); --code-bg: rgba(42, 36, 32, 0.05);
 }
 :root { --font: "Archivo", "Helvetica Neue", Arial, sans-serif; --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace; --gutter: clamp(16px, 3.4vw, 48px); color-scheme: light; }
 [data-theme="night"] { color-scheme: dark; }
